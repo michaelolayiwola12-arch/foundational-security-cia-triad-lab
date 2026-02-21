@@ -1,6 +1,6 @@
 # Foundational Security Concepts Lab – CIA Triad
 
-## 📌 Overview
+## Overview
 
 This project demonstrates the practical implementation of the Confidentiality, Integrity, and Availability (CIA) Triad using:
 
@@ -11,10 +11,7 @@ This project demonstrates the practical implementation of the Confidentiality, I
 
 The objective of this lab is to apply foundational security principles in a controlled environment and document their real-world application.
 
-
-
-
-# 🔐 1. Confidentiality – File Permission Hardening
+#  1. Confidentiality – File Permission Hardening
 
 Sensitive data was protected using Linux file permission controls.
 
