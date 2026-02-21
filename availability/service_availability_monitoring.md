@@ -15,7 +15,7 @@ curl http://localhost:8000/confidential_data.txt
 Stop Service (Simulate Failure)
 kill <PID>
 
-# Monitoring Script
+## Monitoring Script
 
 The Python monitoring script performs:
 
@@ -31,7 +31,7 @@ Exit status reporting
 
 This enables automated uptime monitoring.
 
-# Security Impact:
+## Security Impact:
 
 Validates service availability
 
