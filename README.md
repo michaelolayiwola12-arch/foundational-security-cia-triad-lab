@@ -26,7 +26,8 @@ ls -l
 
 By default, files may allow group/other read access, which violates confidentiality.
 
-Enforcing Confidentiality
+# Enforcing Confidentiality
+
 chmod 600 confidential_data.txt
 
 Owner: Read & Write
@@ -35,9 +36,15 @@ Group: No access
 
 Others: No access
 
+# Enforcing Integrity Protection (Read-Only Mode)
+
+Owner: Read & Write
+
+Group: No access
+
+Others: No access
+
 Enforcing Integrity Protection (Read-Only Mode)
-chmod 400 confidential_data.txt
-echo "Unauthorized change" >> confidential_data.txt
 
 Result:
 
@@ -45,16 +52,21 @@ Permission denied
 
 This prevents unauthorized modifications.
 
-2. Integrity – Hash Verification Using SHA-256
+# 2. Integrity – Hash Verification Using SHA-256
 
 File integrity was validated using cryptographic hashing.
 
-Generate Baseline Hash
+# Generate Baseline Hash
+
 sha256sum confidential_data.txt > hashes.sha256
-Simulate Tampering
+
+# Simulate Tampering
+
 chmod u+w confidential_data.txt
 echo "This is an unauthorized modification." >> confidential_data.txt
-Verify Integrity
+
+# Verify Integrity
+
 sha256sum -c hashes.sha256
 
 Result:
@@ -63,14 +75,18 @@ FAILED
 
 This demonstrates detection of file tampering.
 
-3. Availability – Service Monitoring
+# 3. Availability – Service Monitoring
 
 A local HTTP service was deployed and monitored.
 
-Start Service
+# Start Service
+
 python3 -m http.server 8000 &
-Validate Service
+
+# Validate Service
+
 curl http://localhost:8000/confidential_data.txt
+
 🐍 Python Monitoring Script
 
 See: availability/monitor.py
@@ -112,8 +128,9 @@ Full lab documentation available in:
 
 docs/Foundational_Security_Concept_Michael_Olayiwola.pdf
 
-🎯 Why This Project Matters
+# Why This Project Matters
 
 This project demonstrates practical application of foundational security principles that underpin enterprise security controls.
 
 It reflects hands-on security engineering skills rather than theoretical knowledge.
+
