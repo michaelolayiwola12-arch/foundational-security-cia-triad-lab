@@ -11,7 +11,8 @@ This project demonstrates the practical implementation of the Confidentiality, I
 
 The objective of this lab is to apply foundational security principles in a controlled environment and document their real-world application.
 
----
+
+
 
 # 🔐 1. Confidentiality – File Permission Hardening
 
