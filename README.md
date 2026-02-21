@@ -100,12 +100,17 @@ Timestamp logging
 
 Exit codes for automation
 
-📊 Security Principles Demonstrated
-Principle	Method Used	Outcome
+Security Principles Demonstrated
+
+Principle	Method Used	Outcome:
+
 Confidentiality	chmod 600 / 400	Restricted access
+
 Integrity	sha256sum verification	Tamper detection
+
 Availability	Python monitoring script	Automated uptime validation
-🧠 Skills Demonstrated
+
+Skills Demonstrated
 
 Linux file permission management
 
