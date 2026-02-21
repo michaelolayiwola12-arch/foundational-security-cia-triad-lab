@@ -22,7 +22,8 @@ sha256sum -c hashes.sha256
 Result:
 
 FAILED
-Security Impact
+
+Security Impact:
 
 Detects unauthorized changes
 
