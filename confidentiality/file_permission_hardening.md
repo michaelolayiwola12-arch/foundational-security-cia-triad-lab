@@ -31,7 +31,8 @@ echo "Unauthorized modification" >> confidential_data.txt
 Result:
 
 Permission denied
-Security Impact
+
+Security Impact:
 
 Prevents unauthorized disclosure
 
