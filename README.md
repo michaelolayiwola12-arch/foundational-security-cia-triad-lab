@@ -123,7 +123,7 @@ Security documentation practices
 
 Full lab documentation available in:
 
-docs/Foundational_Security_Concept_Michael_Olayiwola.pdf
+https://github.com/michaelolayiwola12-arch/foundational-security-cia-triad-lab/blob/main/Foundational_Security_Concept_Michael_Olayiwola.pdf
 
 # Why This Project Matters
 
