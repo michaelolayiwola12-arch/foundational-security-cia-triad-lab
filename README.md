@@ -20,12 +20,9 @@ Sensitive data was protected using Linux file permission controls.
 
 ### Environment Setup
 
-```bash
 mkdir -p ~/project && cd ~/project
 echo "Top Secret Details" > confidential_data.txt
 ls -l
-
----
 
 By default, files may allow group/other read access, which violates confidentiality.
 
